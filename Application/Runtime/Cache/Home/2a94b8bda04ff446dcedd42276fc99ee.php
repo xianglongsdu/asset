@@ -1,20 +1,38 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-<title>光大银行资产管理系统</title>
-<script type="text/javascript" src="/guangda/Public/easyui/jquery.min.js"></script>
-<script type="text/javascript" src="/guangda/Public/easyui/jquery.easyui.min.js"></script>
-<script type="text/javascript" src="/guangda/Public/Home/js/home.js"></script>
-<link rel="stylesheet" type="text/css" href="/guangda/Public/easyui/themes/default/easyui.css">
-<link rel="stylesheet" type="text/css" href="/guangda/Public/easyui/themes/icon.css">
+<title>信息管理系统</title>
+<script type="text/javascript" src="/asset/Public/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="/asset/Public/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/asset/Public/Home/js/home.js"></script>
+<link rel="stylesheet" type="text/css" href="/asset/Public/easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="/asset/Public/easyui/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="/asset/Public/Home/css/home.css">
 </head>
 <body>
-<div id="cc" class="easyui-layout" style="width:80%;height:100%;margin: 0 auto;">
-    <div data-options="region:'north',title:'North Title',split:true" style="height:100px;"></div>
-    <div data-options="region:'south',title:'South Title',split:true" style="height:100px;"></div>
-    <div data-options="region:'east',title:'East',split:true" style="width:100px;"></div>
-    <div data-options="region:'west',title:'West',split:true" style="width:100px;"></div>
-    <div data-options="region:'center',title:'center title'" style="padding:5px;background:#eee;"></div>
+
+<div id="header">
+	<div id="logo">信息管理系统</div>
+	
+	<div id="user">用户
+		<ul>
+			<li>退出</li>
+		</ul>
+	</div>
 </div>
+
+<div id="main">
+	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
+	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
+	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
+	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
+	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
+	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
+	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
+</div>
+
+<div id="footer">
+</div>
+
 </body>
 </html>
