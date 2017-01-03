@@ -1,5 +1,7 @@
 $(function(){
-	$('#box').layout({
-		fit: true,
+	$('#user').hover(function(){
+		$('#user ul').show();
+	}, function() {
+		$('#user ul').hide();
 	});
 });

@@ -21,14 +21,28 @@
 	</div>
 </div>
 
-<div id="main">
-	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
-	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
-	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
-	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
-	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
-	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
-	<p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p><p>hello world</p>
+<div id="main" class="easyui-layout">
+	<div id="west" region="west" split="true" title="导航栏"></div>
+	<div id="center" region="center" split="true" title="内容">
+		<table id="content" class="easyui-datagrid" rownumbers="true" fitColumns="true">
+			<thead>
+				<tr>
+					<th field="uid">UID</th>
+					<th field="username">用户名</th>
+					<th field="password">密码</th>
+					<th field="email">邮箱</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1001</td>
+					<td>juedi</td>
+					<td>juedi</td>
+					<td>juedi@163.com</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
 
 <div id="footer">
