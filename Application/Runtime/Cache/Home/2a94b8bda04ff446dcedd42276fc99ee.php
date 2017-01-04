@@ -24,7 +24,7 @@
 <div id="main" class="easyui-layout">
 	<div id="west" region="west" split="true" title="导航栏"></div>
 	<div id="center" region="center" split="true" title="内容">
-		<table id="content" class="easyui-datagrid" rownumbers="true" fitColumns="true">
+		<table id="content" class="easyui-datagrid" rownumbers="true" fitColumns="true" toolbar="#toolbar">
 			<thead>
 				<tr>
 					<th field="uid">UID</th>
@@ -42,6 +42,12 @@
 				</tr>
 			</tbody>
 		</table>
+		<div id="toolbar">
+			<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true">新增</a>
+			<a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true">编辑</a>
+			<a href="#" class="easyui-linkbutton" iconCls="icon-remove
+			" plain="true">删除</a>
+		</div>
 	</div>
 </div>
 
