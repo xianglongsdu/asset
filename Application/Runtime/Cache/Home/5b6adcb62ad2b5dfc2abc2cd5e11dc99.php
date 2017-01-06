@@ -10,9 +10,13 @@
 	<link rel="stylesheet" type="text/css" href="/asset/Public/Home/css/login.css">
 </head>
 <body>
-	<div id="login" class="easyui-panel">
-		<p>用户名：<input type="username" id="username" /></p>
-		<p>密  码：<input type="password" id="password" /></p>
+	<div id="login">
+		<p><label for="username">用户名：</label><input type="username" id="username" /></p>
+		<p><label for="password">密&nbsp;&nbsp;&nbsp;码：</label><input type="password" id="password" /></p>
+		<div id="buttons">
+			<input type="reset" id="reset" class="easyui-linkbutton" value="重置"/>
+			<input type="submit" id="submit" class="easyui-linkbutton" value="提交"/>
+		</div>
 	</div>
 </body>
 </html>
