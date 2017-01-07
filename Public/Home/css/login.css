@@ -26,16 +26,32 @@ html, body {
 	text-align: center;
 }
 
-#buttons {
+.buttons {
 	margin: 30px auto;
 }
 
-#reset {
+.reset {
 	margin-left: 80px;
 	width: 50px;
 }
 
-#submit {
+.submit {
 	margin-left: 20px;
 	width: 50px;
+}
+
+#register {
+	display: none;
+	padding: 10px;
+	overflow: hidden;
+}
+
+#register p {
+	margin: 20px auto auto 20px;
+}
+
+#register p label {
+	display: inline-block;
+	width: 60px;
+	text-align: center;
 }
