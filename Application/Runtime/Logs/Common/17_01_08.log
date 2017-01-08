@@ -1,0 +1,18 @@
+[ 2017-01-08T20:46:26+08:00 ] 127.0.0.1 /asset/index.php/HomeIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:HomeIndex
+
+[ 2017-01-08T20:46:48+08:00 ] 127.0.0.1 /asset/index.php/HomeIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:HomeIndex
+
+[ 2017-01-08T20:46:54+08:00 ] 127.0.0.1 /asset/index.php/HomeIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:HomeIndex
+

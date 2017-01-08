@@ -16,13 +16,20 @@
 	
 	<div id="user">用户
 		<ul>
-			<li>退出</li>
+			<li><a href="{:U('Login/logout')}">退出</a></li>
 		</ul>
 	</div>
 </div>
 
 <div id="main" class="easyui-layout">
-	<div id="west" region="west" split="true" title="导航栏"></div>
+	<div id="west" region="west" split="true" title="导航栏">
+		<div id="navigator" class="easyui-accordion">
+			<div title="test1"></div>
+			<div title="test2"></div>
+			<div title="test3"></div>
+		
+		</div>
+	</div>
 	<div id="center" region="center" split="true" title="内容">
 		<table id="content" class="easyui-datagrid" rownumbers="true" fitColumns="true" toolbar="#toolbar">
 			<thead>

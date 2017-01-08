@@ -8,6 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="/asset/Public/easyui/themes/default/easyui.css">
 	<link rel="stylesheet" type="text/css" href="/asset/Public/easyui/themes/icon.css">
 	<link rel="stylesheet" type="text/css" href="/asset/Public/Home/css/login.css">
+	<script type="text/javascript">
+		var Think = {
+				"LOGIN": "/asset/index.php/Home/Login",   /*/asset/index.php/Home/Login必须加引号*/
+				"INDEX": "/asset/index.php/Home" + "/Index",
+			};
+	</script>
 </head>
 <body>
 	<div id="login">

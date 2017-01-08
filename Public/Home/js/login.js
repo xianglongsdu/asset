@@ -3,10 +3,20 @@ $(function() {
 		title: '登录',
 		width: 300,
 		height: 200,
+		style: {
+			'position': 'relative',		//position一定要加引号！！！
+			'top': '50%',
+			'margin': '-100px auto',
+		}
 	});
 	$('#login_form').form({
-		onSubmit: function() {
-			alert('hello');
+		url: Think['LOGIN'] + '/login',
+		success: function(data) {
+			if (data == "true") {
+				location.href = Think['INDEX'] + '/index';
+			} else {
+				$.messager.alert('信息', '用户名或密码错误','error');
+			}
 		},
 	});
 	
@@ -16,7 +26,19 @@ $(function() {
 		height: 300,
 		closed: true,
 		style: {
-			'margin-top': -150,		//margin-top一定要加引号！！！
+			'position': 'relative',
+			'top': '50%',
+			'margin': '-150px auto',		
+		},
+	});
+	
+	$('#register_form').form({
+		url: Think['LOGIN'] + '/register',
+		success: function() {
+			$('#register_form').form('clear');
+			$('#register').panel('close');
+			$('#login').panel('open');
+			$.messager.alert('信息', '注册成功', 'info');
 		},
 	});
 	
