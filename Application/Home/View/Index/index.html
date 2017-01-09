@@ -41,12 +41,14 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>1001</td>
-					<td>juedi</td>
-					<td>juedi</td>
-					<td>juedi@163.com</td>
-				</tr>
+				<foreach name="user" item="user">
+					<tr>
+						<td>{$user.uid}</td>
+						<td>{$user.username}</td>
+						<td>{$user.password}</td>
+						<td>{$user.email}</td>	
+					</tr>
+				</foreach>
 			</tbody>
 		</table>
 		<div id="toolbar">

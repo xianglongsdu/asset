@@ -32,7 +32,7 @@ class UserModel extends Model {
 		);
 		
 		if ($this->create($data)) {
-			$this->add($data);
+			return $this->add($data);
 		}
 		
 	}

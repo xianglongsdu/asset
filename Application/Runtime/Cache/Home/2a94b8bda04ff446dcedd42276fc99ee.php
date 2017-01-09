@@ -41,12 +41,12 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>1001</td>
-					<td>juedi</td>
-					<td>juedi</td>
-					<td>juedi@163.com</td>
-				</tr>
+				<?php if(is_array($user)): foreach($user as $key=>$user): ?><tr>
+						<td><?php echo ($user["uid"]); ?></td>
+						<td><?php echo ($user["username"]); ?></td>
+						<td><?php echo ($user["password"]); ?></td>
+						<td><?php echo ($user["email"]); ?></td>	
+					</tr><?php endforeach; endif; ?>
 			</tbody>
 		</table>
 		<div id="toolbar">

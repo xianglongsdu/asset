@@ -34,7 +34,7 @@ $(function() {
 	
 	$('#register_form').form({
 		url: Think['LOGIN'] + '/register',
-		success: function() {
+		success: function(data) {
 			$('#register_form').form('clear');
 			$('#register').panel('close');
 			$('#login').panel('open');
