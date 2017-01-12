@@ -4,10 +4,16 @@
 <title>信息管理系统</title>
 <script type="text/javascript" src="/asset/Public/easyui/jquery.min.js"></script>
 <script type="text/javascript" src="/asset/Public/easyui/jquery.easyui.min.js"></script>
-<script type="text/javascript" src="/asset/Public/Home/js/home.js"></script>
+<script type="text/javascript" src="/asset/Public/Home/js/index.js"></script>
 <link rel="stylesheet" type="text/css" href="/asset/Public/easyui/themes/default/easyui.css">
 <link rel="stylesheet" type="text/css" href="/asset/Public/easyui/themes/icon.css">
-<link rel="stylesheet" type="text/css" href="/asset/Public/Home/css/home.css">
+<link rel="stylesheet" type="text/css" href="/asset/Public/Home/css/index.css">
+<script type="text/javascript">
+	var Think = {
+		"INDEX": "/asset/index.php/Home/Index",   /*/asset/index.php/Home/Index必须加引号*/
+		"LOGIN": "/asset/index.php/Home" + "/login",
+	};
+</script>
 </head>
 <body>
 
@@ -24,10 +30,10 @@
 <div id="main" class="easyui-layout">
 	<div id="west" region="west" split="true" title="导航栏">
 		<div id="navigator" class="easyui-accordion">
-			<div title="test1"></div>
-			<div title="test2"></div>
-			<div title="test3"></div>
-		
+			<div title="用户管理"></div>
+			<div title="合同管理"></div>
+			<div title="固定资产管理"></div>
+			<div title="耗材管理"></div>
 		</div>
 	</div>
 	<div id="center" region="center" split="true" title="内容">
@@ -58,7 +64,7 @@
 	</div>
 </div>
 
-<div id="footer">
+<!-- <div id="footer"> -->
 </div>
 
 </body>
