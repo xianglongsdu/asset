@@ -6,7 +6,7 @@ class IndexController extends Controller {
     public function index(){
 		if (session('userinfo')) {
 			$user = new UserModel();
-			$userinfo = $user->select();
+			$userinfo = $user->limit(0, 10)->select();
 			$this->assign("user", $userinfo);
 			$this->display();
 		} else {
@@ -15,12 +15,18 @@ class IndexController extends Controller {
     }
 	
 	public function info() {
-		$num = I('num');
-		$size = I('size');
+		$num = I('page') ? I('page') : 1;
+		$size = I('rows') ? I('rows') : 10;
 		$start = $size * ($num - 1);
 		$user = new UserModel();
+		$count = $user->count();
+		if ($num * $size > $count) {
+			$size = $count - (($num-1) * $size);
+		}
 		$userinfo = $user->limit($start, $size)->select();
-		$this->assign("user", $userinfo);
-		$this->display('index');
+		
+		$result['total'] = $count;
+		$result['rows'] = $userinfo;
+		echo json_encode($result);
 	}
-}
+} 
