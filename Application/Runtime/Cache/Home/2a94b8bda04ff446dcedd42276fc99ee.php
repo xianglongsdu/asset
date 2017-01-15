@@ -29,32 +29,36 @@
 
 <div id="main" class="easyui-layout">
 	<div id="west" region="west" split="true" title="导航栏">
-		<div id="navigator" class="easyui-accordion">
-			<div title="用户管理"></div>
-			<div title="合同管理"></div>
-			<div title="固定资产管理"></div>
-			<div title="耗材管理"></div>
-		</div>
+		<ul id="navigator" class="easyui-datalist">
+			<li value="用户管理">用户管理</li>
+			<li value="合同管理">合同管理</li>
+			<li id="asset-mgt" value="固定资产管理">固定资产管理</li>
+			<li id="consume-mgt" value="耗材管理">耗材管理</li>
+		</ul>
 	</div>
-	<div id="center" region="center" split="true" title="内容">
-		<table id="content" class="easyui-datagrid" rownumbers="true" fitColumns="true" toolbar="#toolbar">
-			<thead>
-				<tr>
-					<th field="uid">UID</th>
-					<th field="username">用户名</th>
-					<th field="password">密码</th>
-					<th field="email">邮箱</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php if(is_array($user)): foreach($user as $key=>$user): ?><tr>
-						<td><?php echo ($user["uid"]); ?></td>
-						<td><?php echo ($user["username"]); ?></td>
-						<td><?php echo ($user["password"]); ?></td>
-						<td><?php echo ($user["email"]); ?></td>	
-					</tr><?php endforeach; endif; ?>
-			</tbody>
-		</table>
+	<div id="center" region="center" split="true">
+		<div id="container" class="easyui-tabs">
+			<div title="用户管理">
+				<table id="content" class="easyui-datagrid" rownumbers="true" fitColumns="true" toolbar="#toolbar">
+					<thead>
+						<tr>
+							<th field="uid">UID</th>
+							<th field="username">用户名</th>
+							<th field="password">密码</th>
+							<th field="email">邮箱</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php if(is_array($user)): foreach($user as $key=>$user): ?><tr>
+								<td><?php echo ($user["uid"]); ?></td>
+								<td><?php echo ($user["username"]); ?></td>
+								<td><?php echo ($user["password"]); ?></td>
+								<td><?php echo ($user["email"]); ?></td>	
+							</tr><?php endforeach; endif; ?>
+					</tbody>
+				</table>
+			</div>
+		</div>
 		<div id="toolbar">
 			<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true">新增</a>
 			<a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true">编辑</a>
