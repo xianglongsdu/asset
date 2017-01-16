@@ -15,8 +15,8 @@
 	};
 </script>
 </head>
-<body>
 
+<body>
 <div id="header">
 	<div id="logo">信息管理系统</div>
 	
@@ -62,15 +62,35 @@
 			</div>
 		</div>
 		<div id="toolbar">
-			<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true">新增</a>
-			<a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true">编辑</a>
-			<a href="#" class="easyui-linkbutton" iconCls="icon-remove
+			<a href="#" id="user-add" class="easyui-linkbutton" iconCls="icon-add" plain="true">新增</a>
+			<a href="#" id="user-edit" class="easyui-linkbutton" iconCls="icon-edit" plain="true">编辑</a>
+			<a href="#" id="user-remove" class="easyui-linkbutton" iconCls="icon-remove
 			" plain="true">删除</a>
 		</div>
 	</div>
 </div>
 
-<div id="footer">
+<div id="footer"></div>
+
+<div id='user-dialog'>
+	<form class="easyui-form" method='post'>
+		<p>
+			<label for="username">用户名：</label>
+			<input id="username" type="text" class="easyui-textbox" />
+		</p>
+		<p>
+			<label for="password">密&nbsp;&nbsp;&nbsp;码：</label>
+			<input id="password" type="password" class="easyui-passwordbox" />
+		</p>
+		<p>
+			<label for="email">邮&nbsp;&nbsp;&nbsp;箱：</label>
+			<input id="email" type="email" class="easyui-textbox" />
+		</p>
+		<p>
+			<a href="#" class="easyui-linkbutton" iconCls="icon-ok">保存</a>
+			<a href="#" class="easyui-linkbutton" iconCls="icon-cancel">取消</a>
+		</p>
+	</form>
 </div>
 
 </body>
