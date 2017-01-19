@@ -38,28 +38,9 @@
 	</div>
 	<div id="center" region="center" split="true">
 		<div id="container" class="easyui-tabs">
-			<div title="用户管理">
-				<table id="content" class="easyui-datagrid" rownumbers="true" fitColumns="true" toolbar="#toolbar">
-					<thead>
-						<tr>
-							<th field="uid">UID</th>
-							<th field="username">用户名</th>
-							<th field="password">密码</th>
-							<th field="email">邮箱</th>
-						</tr>
-					</thead>
-					<tbody>
-						<?php if(is_array($user)): foreach($user as $key=>$user): ?><tr>
-								<td><?php echo ($user["uid"]); ?></td>
-								<td><?php echo ($user["username"]); ?></td>
-								<td><?php echo ($user["password"]); ?></td>
-								<td><?php echo ($user["email"]); ?></td>	
-							</tr><?php endforeach; endif; ?>
-					</tbody>
-				</table>
-			</div>
+	
 		</div>
-		<div id="toolbar">
+		<div id="toolbar" style="display: none">
 			<a href="#" id="user-add" class="easyui-linkbutton" iconCls="icon-add" plain="true">新增</a>
 			<a href="#" id="user-edit" class="easyui-linkbutton" iconCls="icon-edit" plain="true">编辑</a>
 			<a href="#" id="user-remove" class="easyui-linkbutton" iconCls="icon-remove
@@ -70,7 +51,7 @@
 
 <div id="footer"></div>
 
-<div id='user-dialog'>
+<!-- <div id='user-dialog'>
 	<form class="easyui-form" method='post'>
 		<p>
 			<label for="username">用户名：</label>
@@ -90,6 +71,6 @@
 		</p>
 	</form>
 </div>
-
+ -->
 </body>
 </html>

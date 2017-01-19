@@ -2,6 +2,7 @@
 namespace Home\Controller;
 use Think\Controller;
 use Home\Model\UserModel;
+
 class IndexController extends Controller {
     public function index(){
 		if (session('userinfo')) {
@@ -28,5 +29,9 @@ class IndexController extends Controller {
 		$result['total'] = $count;
 		$result['rows'] = $userinfo;
 		echo json_encode($result);
+	}
+	
+	public function user_show() {
+		$this->display('user');
 	}
 } 
